@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css"
 const Header = () => {
     return (
         <div className="text-xl font-bold text-blue-500">
-            <Link className="mr-2" to="/">Home</Link>
-            <Link className="mr-2" to="/about">About</Link>
-            <Link className="mr-2" to="/contract">Contract</Link>
-            <Link className="mr-2" to="/users">Users</Link>
+            <nav>
+           
+            <NavLink className="mr-2" to={'/'}>Home</NavLink>
+            <NavLink className="mr-2" to={'/about'}>About</NavLink>
+            <NavLink className="mr-2" to={'/contract'}>Contract</NavLink>
+            <NavLink className="mr-2" to={'/users'}>Users</NavLink>
+            </nav>
         </div>
     );
 };
